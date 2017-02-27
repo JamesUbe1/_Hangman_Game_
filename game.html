@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en=US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JS Hangman Game</title>
+		<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<body onclick="startGame(0)">
+		<div class="container">
+			<div class="row" id="infoPanel">
+			<p1><span>WELCOME TO ONLINE HANGMAN! THE BEST HANGMAN GAME EVER!!</span></p1>
+				<div class="col-sm-12 col-md-6" id="img"></div>
+			</div>
+		
+			<p>Guesses Left:<span id="guesses-left"></span></p>
+			<p>word-Blank:<span id="word-blank"></span></p>
+			<p>Wrong Guesses:<span id="wrong-guesses"></span></p>
+			<p>Wins:<span id="win-counter"></span></p>
+			<p>Losses:<span id="loss-counter"></span></p>
+			<p>Restart:<span id="no-display"></span></p>
+			<script type="text/javascript" src="logic.js"></script>
+			<button class="btn btn-primary" type="button">
+  			Hint: <span class="badge"> 
+					Recent US presidents or Field of Study.!!</span>
+			</button>
+			<div span id="score">Score: 1 or Zero</span>
+			</div>
+		</div>
+	</body>
+</html>
